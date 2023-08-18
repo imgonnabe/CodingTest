@@ -1,4 +1,4 @@
-package peak;
+package array;
 
 import java.util.Scanner;
 

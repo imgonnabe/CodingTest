@@ -1,4 +1,4 @@
-package rank;
+package array;
 
 import java.util.Scanner;
 

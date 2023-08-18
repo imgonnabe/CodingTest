@@ -1,4 +1,4 @@
-package mentoring;
+package array;
 
 import java.util.Scanner;
 

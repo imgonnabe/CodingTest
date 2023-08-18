@@ -1,4 +1,4 @@
-package fibo;
+package array;
 
 import java.util.Scanner;
 

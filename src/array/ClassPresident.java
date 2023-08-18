@@ -1,4 +1,4 @@
-package classPresident;
+package array;
 
 import java.util.Scanner;
 

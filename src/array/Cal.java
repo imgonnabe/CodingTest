@@ -1,4 +1,4 @@
-package calculate;
+package array;
 
 import java.util.Scanner;
 

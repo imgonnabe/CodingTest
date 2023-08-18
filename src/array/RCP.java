@@ -1,4 +1,4 @@
-package rcp;
+package array;
 
 import java.util.Scanner;
 
