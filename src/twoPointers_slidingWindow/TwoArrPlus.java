@@ -1,24 +1,44 @@
 package twoPointers_slidingWindow;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TwoArrPlus {
-	public static int solution(int n, int[] arr, int m, int[] arr2) {
-		int answer= 0;
+	public static ArrayList<Integer> solution(int n, int[] a, int m, int[] b) {
+		ArrayList<Integer> answer = new ArrayList<>();
+		int p1 = 0, p2 =0;
+		while(p1 < n && p2 < m) {
+			if(a[p1] < b[p2]) {
+				answer.add(a[p1++]);
+			} else {
+				answer.add(b[p2++]);
+			}
+		}
+		
+		while(p1 < n) {
+			answer.add(a[p1++]);
+		}
+		
+		while(p2 < m) {
+			answer.add(b[p2++]);
+		}
 		return answer;
 	}
-	
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		int[] arr = new int[n];
+		int[] a = new int[n];
 		for (int i = 0; i < n; i++) {
-			arr[i] = sc.nextInt();
+			a[i] = sc.nextInt();
 		}
 		int m = sc.nextInt();
-		int[] arr2 = new int[m];
+		int[] b = new int[m];
 		for (int i = 0; i < m; i++) {
-			arr2[i] = sc.nextInt();
+			b[i] = sc.nextInt();
+		}
+		for (int i : solution(n, a, m, b)) {
+			System.out.print(i + " ");
 		}
 	}
 }
