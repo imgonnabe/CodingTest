@@ -22,5 +22,6 @@ public class FindCharSolution {
 		char input2 = sc.next().charAt(0);
 		
 		System.out.println(FindCharSolution.solution(input1, input2));
+		sc.close();
 	}
 }
