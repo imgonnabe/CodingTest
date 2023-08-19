@@ -40,5 +40,6 @@ public class SameElement {
 		for (int i : solution(n, m, a, b)) {
 			System.out.print(i + " ");
 		}
+		sc.close();
 	}
 }
