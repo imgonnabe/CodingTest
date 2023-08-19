@@ -40,5 +40,6 @@ public class TwoArrPlus {
 		for (int i : solution(n, a, m, b)) {
 			System.out.print(i + " ");
 		}
+		sc.close();
 	}
 }
