@@ -41,5 +41,6 @@ public class Mentoring {
 			}
 		}
 		System.out.println(solution(n, m ,arr));
+		sc.close();
 	}
 }
