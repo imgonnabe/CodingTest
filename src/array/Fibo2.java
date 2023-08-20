@@ -19,5 +19,6 @@ public class Fibo2 {
 		for (int i : fibo(N)) {
 			System.out.print(i + " ");
 		}
+		sc.close();
 	}
 }
