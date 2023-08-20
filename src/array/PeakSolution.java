@@ -34,5 +34,6 @@ public class PeakSolution {
 			}
 		}
 		System.out.println(solution(n, arr));
+		sc.close();
 	}
 }
