@@ -39,5 +39,6 @@ public class PrimeNumber2 {
 			arr[i] = sc.nextInt();
 		}
 		Solution(N, arr);
+		sc.close();
 	}
 }
