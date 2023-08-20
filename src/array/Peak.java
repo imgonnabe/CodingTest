@@ -26,5 +26,6 @@ public class Peak {
 			}
 		}
 		System.out.println(solution(N, arr));
+		sc.close();
 	}
 }
