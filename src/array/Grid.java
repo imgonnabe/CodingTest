@@ -37,5 +37,6 @@ public class Grid {
 			}
 		}
 		System.out.println(solution(N, arr));
+		sc.close();
 	}
 }
