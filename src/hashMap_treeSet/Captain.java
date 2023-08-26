@@ -12,6 +12,9 @@ public class Captain {
 		}
 		System.out.println(map.containsKey('A'));
 		System.out.println(map.size());
+		System.out.println(map.remove('A'));// 3 > A의 value
+		System.out.println(map.size());
+		
 		int max = Integer.MIN_VALUE;
 		for (char key : map.keySet()) {
 			if(map.get(key) > max) {
