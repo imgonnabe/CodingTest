@@ -10,7 +10,8 @@ public class Captain {
 		for (char x : str.toCharArray()) {
 			map.put(x, map.getOrDefault(x, 0) + 1);
 		}
-		
+		System.out.println(map.containsKey('A'));
+		System.out.println(map.size());
 		int max = Integer.MIN_VALUE;
 		for (char key : map.keySet()) {
 			if(map.get(key) > max) {
