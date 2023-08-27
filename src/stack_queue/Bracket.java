@@ -21,7 +21,6 @@ public class Bracket {
 		if(!stack.isEmpty()) {// 여는 괄호가 많다면
 			return "NO";
 		}
-		
 		return answer;
 	}
 	
