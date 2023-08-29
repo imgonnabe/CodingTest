@@ -13,7 +13,7 @@ public class Education {
 		}
 		
 		for (char c : str2.toCharArray()) {
-			if(Q.contains(c)){
+			if(Q.contains(c)){// Q에 없다면 그냥 넘어간다.
 				if(c != Q.poll()) {
 					return "NO";
 				}
