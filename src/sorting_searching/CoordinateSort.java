@@ -6,8 +6,6 @@ import java.util.Scanner;
 
 public class CoordinateSort {
 	public static ArrayList<Integer> solution(int n, int[][] a) {
-		ArrayList<Integer> answer = new ArrayList<>();
-		Arrays.sort(a);
 		return answer;
 	}
 	
