@@ -7,7 +7,7 @@ public class Horse {
 	public static int count(int[] a, int dist) {
 		int cnt = 1, ep = a[0];
 		for (int i = 0; i < a.length; i++) {
-			if(a[i] - ep >= dist) {
+			if(a[i] - ep >= dist) {// 주어진 거리보다 크다면
 				cnt++;
 				ep = a[i];
 			}
@@ -21,7 +21,7 @@ public class Horse {
 		int lt = a[0], rt = a[n - 1];
 		while(lt <= rt) {
 			int mid =(lt + rt) / 2;
-			if(count(a, mid) >= c) {
+			if(count(a, mid) >= c) {// 주어진 마리수보다 크다면
 				answer = mid;
 				lt = mid + 1;
 			} else {
