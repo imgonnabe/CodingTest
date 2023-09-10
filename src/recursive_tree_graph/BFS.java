@@ -1,17 +1,31 @@
 package recursive_tree_graph;
 
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class BFS {
 	
 	Node root;
 	
-	public static void DFS(Node root) {
-		if(root == null) {
-			return;
-		} else {
-			DFS(root.lt);
-			System.out.print(root.data + " ");// 앞에 있으면 전위순회, 중간이면 중위순회, 마지막이면 후위순회
-			DFS(root.rt);
+	public static void BFS2(Node root) {
+		Queue<Node> Q = new LinkedList<>();
+		Q.offer(root);
+		int L = 0;// 임의로 설정
+		while(!Q.isEmpty()) {
+			int len = Q.size();
+			System.out.print(L + " : ");
+			for (int i = 0; i < len; i++) {// offer : 1 > 2 3 > 3 4 5 > 4 5 6 7
+				Node cur = Q.poll();
+				System.out.print(cur.data + " ");
+				if(cur.lt != null) {
+					Q.offer(cur.lt);
+				}
+				if(cur.rt != null) {
+					Q.offer(cur.rt);
+				}
+			}
+			L++;
+			System.out.println();
 		}
 	}
 	
@@ -24,6 +38,6 @@ public class BFS {
 		tree.root.lt.rt = new Node(5);
 		tree.root.rt.lt = new Node(6);
 		tree.root.rt.rt = new Node(7);
-		DFS(tree.root);
+		BFS2(tree.root);
 	}
 }
