@@ -11,7 +11,7 @@ public class FindCalf_BFS {
 	static Queue<Integer> Q = new LinkedList<>();
 
 	public static int BFS(int s, int e) {
-		ch = new int[10001];
+		ch = new int[10001];// 좌표
 		ch[s] = 1;// 숫자 있는지 체크
 		Q.offer(s);
 		int L = 0;// 임의로 설정
