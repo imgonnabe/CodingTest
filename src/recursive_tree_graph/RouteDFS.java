@@ -25,7 +25,7 @@ import java.util.Scanner;
 	4 2
 	4 5*/
 
-public class RouteDFS {
+public class RouteDFS {// 배열
 	static int n, m, answer = 0;
 	static int[][] graph;
 	static int[] ch;
