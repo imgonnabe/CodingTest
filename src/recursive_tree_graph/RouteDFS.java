@@ -28,7 +28,7 @@ import java.util.Scanner;
 public class RouteDFS {// 배열
 	static int n, m, answer = 0;
 	static int[][] graph;
-	static int[] ch;
+	static int[] ch;// 경로 확인 유무
 	
 	public void DFS(int v) {
 		if(v == n) {
