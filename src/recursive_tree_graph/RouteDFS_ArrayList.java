@@ -26,7 +26,7 @@ import java.util.Scanner;
 	4 2
 	4 5*/
 
-public class RouteDFS_ArrayList {// 더 효율적
+public class RouteDFS_ArrayList {// 효율적
 	static int n, m, answer = 0;
 	static ArrayList<ArrayList<Integer>> graph;
 	static int[] ch;// 경로 확인 유무
