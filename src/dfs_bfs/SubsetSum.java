@@ -15,9 +15,9 @@ public class SubsetSum {
 				flag = true;
 			}
 		} else {
-			DFS(L + 1, sum + arr[L], arr);// 합에 arr[L] 포함 o
+			DFS(L + 1, sum + arr[L], arr);// 합에 arr[L] 포함o
 			System.out.println("포함o " + L + " : " + sum);
-			DFS(L + 1, sum, arr);// 합에 arr[L] 포함 x
+			DFS(L + 1, sum, arr);// 합에 arr[L] 포함x
 			System.out.println("포함x " + L + " : " + sum);
 		}
 	}
